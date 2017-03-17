@@ -1,0 +1,25 @@
+{
+  "name": "css-to-stylus-converter",
+  "version": "1.0.0",
+  "description": "Convert css to stylus syntax",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --ui bdd test",
+    "test:watch": "mocha -w --ui bdd test"
+  },
+  "author": "KonstantinKai",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "css": "^2.2.1",
+    "lodash": "^4.17.4",
+    "mkdirp": "^0.5.1"
+  },
+  "bin": {
+    "css-to-stylus": "./bin/css-to-stylus"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}

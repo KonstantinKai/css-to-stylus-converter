@@ -1,0 +1,124 @@
+#!/usr/bin/env node
+
+const fs = require('fs');
+const path = require('path');
+const program = require('commander');
+const package = require('../package');
+const convert = require('../');
+const mkdirp = require('mkdirp');
+const _ = require('lodash');
+
+let inputFiles = [];
+let stdInput = '';
+
+function resolveToAbsolute (src = '', cwd) {
+	return !path.isAbsolute(src) && path.resolve(cwd, src) || src;
+}
+
+function writeFile (fileName, dirName, content) {
+	if (!fileName) {
+		fileName = `${_.uniqueId(_.now() + '_')}.styl`;
+	} else {
+		fileName += '.styl';
+	}
+
+	if (!dirExist(dirName)) {
+		mkdirp(dirName);
+	}
+
+	fs.writeFile(path.join(dirName, fileName), content);
+}
+
+function dirExist (dir) {
+	let res = false;
+
+	try {
+		let stat = fs.statSync(dir);
+		res = stat.isDirectory();
+	} catch (e) {} finally {
+		return res;
+	}
+}
+
+program
+	.version(package.version)
+	.usage('[options] <file ...>')
+	.action(function () {
+		inputFiles = Array.prototype.slice.call(arguments, 0, -1);
+	})
+	.option('-u --unprefix', 'remove vendor prefixes')
+	.option('-i --indent [n]', 'set indentation (number|tab)', val => {
+		return val === 'tab' && val || parseInt(val);
+	})
+	.option('-c --css-syntax', 'keep css syntax')
+	.option('-l --keep-colons', 'keep colons')
+	.option('-s --separate-rules', 'add new line before next rule')
+	.option('-r --remove-comments', 'remove comments')
+	.option('-d --output-dir [dir]', 'output dir')
+	.option('-o --color-variables', 'create color variables at top of file')
+	.on('--help', () => {
+		console.log([
+			'  Examples:',
+			'',
+			'    # Generate file.styl in current folder from style.css',
+			'    cat style.css | css-to-stylus [options] >> file.styl',
+			'',
+			'    # Generate random name file in dir folder',
+			'    cat style.css | css-to-stylus -d dir',
+			'',
+			'    # Generate file1.styl & file2.styl in current folder',
+			'    css-to-stylus [options] file1.css file2.css'
+		].join('\n'));
+	});
+
+program.parse(process.argv);
+
+const convertOptions = {
+	unprefix: program.unprefix,
+	indent: program.indent,
+	keepColons: program.keepColons,
+	cssSyntax: program.cssSyntax,
+	separateRules: program.separateRules,
+	removeComments: program.removeComments,
+	colorVariables: program.colorVariables
+};
+
+const outputDir = resolveToAbsolute(program.outputDir, process.cwd());
+
+if (inputFiles.length) {
+	inputFiles.forEach(file => {
+		let fullPath = path.resolve(process.cwd(), file);
+		let baseName = path.basename(file, '.css');
+		let dirname = outputDir || path.dirname(fullPath);
+
+		let stylusContent = convert(fs.readFileSync(fullPath).toString(), convertOptions);
+
+		if (outputDir) {
+			writeFile(baseName, outputDir, stylusContent);
+		}
+	});
+} else {
+	process.stdin.setEncoding('utf8');
+	process.stdin.on('data', function (data) {
+		stdInput += data;
+	});
+
+	process.stdin.on('end', function () {
+		let stylusContent = convert(stdInput, convertOptions);
+		
+		if (program.outputDir) {
+			writeFile(null, outputDir, stylusContent);
+		} else {
+			process.stdout.write(convert(stdInput, convertOptions));
+		}
+	});
+
+	process.stdin.resume();
+}
+
+setTimeout(() => {
+	if (stdInput.length === 0 && inputFiles.length === 0) {
+		program.help()
+		process.exit(1);
+	}
+}, 10);

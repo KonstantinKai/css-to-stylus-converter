@@ -1,0 +1,100 @@
+@charset 'UTF-8';
+@import "common.css" screen, projection;
+
+/* Default namespace */
+@namespace url(XML-namespace-URL);
+@namespace "XML-namespace-URL";
+
+/* Prefixed namespace */
+@namespace prefix url(XML-namespace-URL);
+@namespace prefix "XML-namespace-URL";
+
+@font-face {
+  font-family: Open_Sans_Bold;
+  src: url("../fonts/opensans-bold-webfont.woff") format("woff"), url("../fonts/opensans-bold-webfont.ttf") format("truetype"), url("../fonts/opensans-bold-webfont.svg#Open_Sans_Bold") format("svg");
+  font-weight: 400;
+  font-style: 'normal';
+}
+@font-face {
+  font-family: Open_Sans_Light;
+  src: url("../fonts/opensans-light-webfont.woff") format("woff"), url("../fonts/opensans-light-webfont.ttf") format("truetype"), url("../fonts/opensans-light-webfont.svg#Open_Sans_Light") format("svg");
+  font-weight: 400;
+  font-style: 'normal';
+}
+.class-1, .class-4, #id-1 {
+	display: block;
+}
+.class-1.class-2 {
+	color: white;
+}
+.class-2 .class-3 {
+	font-size: 12px;
+	padding: 20px;
+}
+.class-2 {
+	margin: auto;
+}
+.class-1 {
+	position: relative;
+}
+@media (max-width:400px) {
+	#login_form .common-input.icon + .error-message {
+		font-size: 12px;
+    padding: 20px;
+	}
+  /*#login_form {
+    margin: auto
+  }*/
+}
+@media only screen and (max-width:400px) {
+	#login_form .common-input.icon + .error-message {
+		font-size: 12px;
+	}
+}
+
+@-moz-keyframes play {
+  from {
+    background-position: 0 0px;
+  }
+  to {
+    background-position: 0 -560px
+  }
+}
+
+@-ms-keyframes play {
+   from { background-position: 0 0px; }
+     to { background-position: 0 -560px }
+}
+
+@-o-keyframes play {
+   from { background-position: 0 0px; }
+     to { background-position: 0 -560px }
+}
+
+@keyframes play {
+  from { background-position: 0 0px; }
+  to { background-position: 0 -560px }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  	/*padding: 20px;*/
+  }
+  20% {
+    opacity: 0.2;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.8;
+	padding: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
