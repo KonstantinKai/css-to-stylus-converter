@@ -54,20 +54,20 @@ program
 	.option('-l --keep-colons', 'keep colons')
 	.option('-s --separate-rules', 'add new line before next rule')
 	.option('-r --remove-comments', 'remove comments')
-	.option('-d --output-dir [dir]', 'output dir')
 	.option('-o --color-variables', 'create color variables at top of file')
+	.option('-d --output-dir [dir]', 'output dir')
 	.on('--help', () => {
 		console.log([
 			'  Examples:',
+			'',
+			'    # Generate file1.styl & file2.styl in current folder',
+			'    css-to-stylus [options] file1.css file2.css',
 			'',
 			'    # Generate file.styl in current folder from style.css',
 			'    cat style.css | css-to-stylus [options] >> file.styl',
 			'',
 			'    # Generate random name file in dir folder',
-			'    cat style.css | css-to-stylus -d dir',
-			'',
-			'    # Generate file1.styl & file2.styl in current folder',
-			'    css-to-stylus [options] file1.css file2.css'
+			'    cat style.css | css-to-stylus -d dir'
 		].join('\n'));
 	});
 

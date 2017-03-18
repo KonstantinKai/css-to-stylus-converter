@@ -97,6 +97,17 @@ module.exports = (test) => {
 					`					margin auto`
 				].join('\n'),
 			],
+			[
+				[
+					`input[type="search"]::-webkit-input-placeholder {`,
+					`	color: #ffd595;`,
+					`}`,
+				].join('\n'),
+				[
+					`input[type="search"]::-webkit-input-placeholder`,
+					`	color #ffd595`
+				].join('\n')
+			]
 		]);
 	});
 }

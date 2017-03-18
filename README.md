@@ -1,5 +1,28 @@
 # Css to Stylus converter
 
+### Install:
+
+```sh
+npm install -g css-to-stylus-converter
+```
+
+### Node usage:
+```js
+const cssToStylus = require('css-to-stylus-converter');
+
+/**
+ unprefix: boolean,
+ indent: number,
+ keepColons: boolean,
+ cssSyntax: boolean,
+ separateRules: boolean,
+ removeComments: boolean,
+ colorVariables: boolean
+ */
+
+const stylusResult = cssToStylus(cssContent, converterOptions);
+```
+
 ### CLI usage:
 ```sh
 Usage: css-to-stylus [options] <file ...>
@@ -14,8 +37,8 @@ Usage: css-to-stylus [options] <file ...>
     -l --keep-colons       keep colons
     -s --separate-rules    add new line before next rule
     -r --remove-comments   remove comments
-    -d --output-dir [dir]  output dir
     -o --color-variables   create color variables at top of file
+    -d --output-dir [dir]  output dir
 
   Examples:
 
