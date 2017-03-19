@@ -2,10 +2,15 @@
   "name": "css-to-stylus-converter",
   "version": "1.0.0",
   "description": "Convert css to stylus syntax",
+  "keywords": [
+    "css", "stylus", "converter"
+  ],
   "main": "index.js",
   "scripts": {
     "test": "mocha --ui bdd test",
-    "test:watch": "mocha -w --ui bdd test"
+    "test:watch": "mocha -w --ui bdd test",
+    "preversion": "npm test",
+    "postversion": "git push origin $(git rev-parse --abbrev-ref HEAD) && git push --tags"
   },
   "author": "KonstantinKai",
   "license": "MIT",
@@ -21,5 +26,12 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^3.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KonstantinKai/css-to-stylus-converter"
+  },
+  "bugs": {
+    "url": "https://github.com/KonstantinKai/css-to-stylus-converter/issues"
   }
 }
