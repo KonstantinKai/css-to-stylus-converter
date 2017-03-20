@@ -107,6 +107,41 @@ module.exports = (test) => {
 					`input[type="search"]::-webkit-input-placeholder`,
 					`	color #ffd595`
 				].join('\n')
+			],
+			[
+				[
+					`.top-menu>div.left-part {`,
+					`	display: block;`,
+					`	position: absolute;`,
+					`	left: 0;`,
+					`	top: 100%;`,
+					`	background-color: inherit;`,
+					`}`
+				].join('\n'),
+				[
+					`.top-menu`,
+					`	>div`,
+					`		&.left-part`,
+					`			display block`,
+					`			position absolute`,
+					`			left 0`,
+					`			top 100%`,
+					`			background-color inherit`
+				].join('\n')
+			],
+			[
+				[
+					`body:last-child:not(.class-1).class-2 {`,
+					`	padding: 0 38px 0 18px;`,
+					`}`
+				].join('\n'),
+				[
+					`body`,
+					`	&:last-child`,
+					`		&:not(.class-1)`,
+					`			&.class-2`,
+					`				padding 0 38px 0 18px`
+				].join('\n')
 			]
 		]);
 	});
