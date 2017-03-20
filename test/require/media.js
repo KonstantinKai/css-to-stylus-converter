@@ -22,7 +22,7 @@ module.exports = (test) => {
 					`					font-size 12px`,
 					`					padding 20px`,
 					`	/*#login_form {`,
-					`		margin: auto;`,
+					`			margin: auto;`,
 					`	}*/`
 				].join('\n')
 			],
@@ -56,6 +56,29 @@ module.exports = (test) => {
 					`		font-size 12px`,
 					`	.class-1`,
 					`		padding 20px`
+				].join('\n')
+			],
+			[
+				[
+					`@media screen and (min-width: 600px) {`,
+					`	.content-list .item,`,
+					`	.tour-buttons .unlogged-buttons {`,
+					`		width: 49%;`,
+					`	}`,
+					`	.content-list .item .total,`,
+					`	.content-list .item .socials {`,
+					`		display: block;`,
+					`	}`,
+					`}`
+				].join('\n'),
+				[
+					`@media screen and (min-width: 600px)`,
+					`	.content-list .item`,
+					`	.tour-buttons .unlogged-buttons`,
+					`		width 49%`,
+					`	.content-list .item .total`,
+					`	.content-list .item .socials`,
+					`		display block`,
 				].join('\n')
 			]
 		]);

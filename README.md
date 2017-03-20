@@ -39,6 +39,7 @@ Usage: css-to-stylus [options] <file ...>
     -r --remove-comments   remove comments
     -o --color-variables   create color variables at top of file
     -d --output-dir [dir]  output dir
+    -v --verbose           show information
 
   Examples:
 

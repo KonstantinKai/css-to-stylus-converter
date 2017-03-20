@@ -142,6 +142,36 @@ module.exports = (test) => {
 					`			&.class-2`,
 					`				padding 0 38px 0 18px`
 				].join('\n')
+			],
+			[
+				[
+					`.ui-dialog.dark-overlay~.ui-widget-overlay {`,
+					`	opacity: .8;`,
+					`}`
+				].join('\n'),
+				[
+					`.ui-dialog`,
+					`	&.dark-overlay`,
+					`		~.ui-widget-overlay`,
+					`			opacity .8`
+				].join('\n')
+			],
+			[
+				[
+					`.top-menu .action.logged>div.right-part>.ico:first-child {`,
+					`	padding: 20px;`,
+					`}`
+				].join('\n'),
+				[
+					`.top-menu`,
+					`	.action`,
+					`		&.logged`,
+					`			>div`,
+					`				&.right-part`,
+					`					>.ico`,
+					`						&:first-child`,
+					`							padding 20px`
+				].join('\n')
 			]
 		]);
 	});

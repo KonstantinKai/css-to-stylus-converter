@@ -26,6 +26,10 @@ function writeFile (fileName, dirName, content) {
 		mkdirp(dirName);
 	}
 
+	if (program.verbose) {
+		console.log(`-> ${path.join(dirName, fileName)}`);
+	}
+
 	fs.writeFile(path.join(dirName, fileName), content);
 }
 
@@ -56,6 +60,7 @@ program
 	.option('-r --remove-comments', 'remove comments')
 	.option('-o --color-variables', 'create color variables at top of file')
 	.option('-d --output-dir [dir]', 'output dir')
+	.option('-v --verbose', 'show information')
 	.on('--help', () => {
 		console.log([
 			'  Examples:',
