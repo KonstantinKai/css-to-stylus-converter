@@ -1,6 +1,6 @@
 {
   "name": "css-to-stylus-converter",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Convert css to stylus syntax",
   "keywords": [
     "css",
