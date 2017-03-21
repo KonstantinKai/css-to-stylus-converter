@@ -49,6 +49,42 @@ module.exports = (test) => {
 					{
 						unprefix: true
 					}
+				],
+				[
+					[
+						`.class-1 {`,
+						`	background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(0,0,0,0)),color-stop(60%,rgba(0,0,0,0.15)),color-stop(100%,rgba(0,0,0,0.15)));`,
+						`	background:-webkit-linear-gradient(top,rgba(0,0,0,0) 0%,rgba(0,0,0,0.15) 60%,rgba(0,0,0,0.15) 100%);`,
+						`	background:-o-linear-gradient(top,rgba(0,0,0,0) 0%,rgba(0,0,0,0.15) 60%,rgba(0,0,0,0.15) 100%);`,
+						`	background:-ms-linear-gradient(top,rgba(0,0,0,0) 0%,rgba(0,0,0,0.15) 60%,rgba(0,0,0,0.15) 100%);`,
+						`	background:linear-gradient(to bottom,rgba(0,0,0,0) 0%,rgba(0,0,0,0.15) 60%,rgba(0,0,0,0.15) 100%);`,
+						`}`
+					].join('\n'),
+					[
+						`.class-1`,
+						`	background linear-gradient(to bottom,rgba(0,0,0,0) 0%,rgba(0,0,0,0.15) 60%,rgba(0,0,0,0.15) 100%)`
+					].join('\n'),
+					{
+						unprefix: true
+					}
+				],
+				[
+					[
+						`.class-1 {`,
+						`	display: -webkit-flex;`,
+						`	display: -moz-flex;`,
+						`	display: -ms-flex;`,
+						`	display: -o-flex;`,
+						`	display: flex;`,
+						`}`
+					].join('\n'),
+					[
+						`.class-1`,
+						`	display flex`
+					].join('\n'),
+					{
+						unprefix: true
+					}
 				]
 			]);
 		});

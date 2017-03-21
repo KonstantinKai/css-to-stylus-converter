@@ -43,6 +43,27 @@ module.exports = (test) => {
 				{
 					colorVariables: true
 				}
+			],
+			[
+				[
+					`.class-1 {`,
+					`	border-color: #fff;`,
+					`	background-color: #ffffff;`,
+					`	color: #ffffffff;`,
+					`}`
+				].join('\n'),
+				[
+					`_c1 = #fff`,
+					``,
+					`.class-1`,
+					`	border-color _c1`,
+					`	background-color _c1`,
+					`	color _c1`
+				].join('\n'),
+				{
+					colorVariables: true,
+					colorVariablesPrefix: '_c'
+				}
 			]
 		]);
 	});

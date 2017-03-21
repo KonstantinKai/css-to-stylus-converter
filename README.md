@@ -38,6 +38,7 @@ Usage: css-to-stylus [options] <file ...>
     -s --separate-rules    add new line before next rule
     -r --remove-comments   remove comments
     -o --color-variables   create color variables at top of file
+    -p --color-variables-prefix  color variables prefix
     -d --output-dir [dir]  output dir
     -v --verbose           show information
 

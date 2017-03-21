@@ -76,6 +76,9 @@ module.exports = (test) => {
 					`		&.class-2`,
 					`			display block`
 				].join('\n'),
+				{
+					colorVariables: true
+				}
 			],
 			[
 				[

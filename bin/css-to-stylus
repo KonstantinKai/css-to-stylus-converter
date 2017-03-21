@@ -59,6 +59,7 @@ program
 	.option('-s --separate-rules', 'add new line before next rule')
 	.option('-r --remove-comments', 'remove comments')
 	.option('-o --color-variables', 'create color variables at top of file')
+	.option('-p --color-variables-prefix [prefix]', 'color variables prefix')
 	.option('-d --output-dir [dir]', 'output dir')
 	.option('-v --verbose', 'show information')
 	.on('--help', () => {
@@ -85,7 +86,8 @@ const convertOptions = {
 	cssSyntax: program.cssSyntax,
 	separateRules: program.separateRules,
 	removeComments: program.removeComments,
-	colorVariables: program.colorVariables
+	colorVariables: program.colorVariables,
+	colorVariablesPrefix: program.colorVariablesPrefix
 };
 
 const outputDir = resolveToAbsolute(program.outputDir, process.cwd());
