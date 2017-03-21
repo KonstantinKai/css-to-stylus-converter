@@ -12,6 +12,7 @@
     "test": "mocha --ui bdd test",
     "test:watch": "mocha -w --ui bdd test",
     "preversion": "npm test",
+    "version": "node_modules/.bin/git-release-notes 62b58a5d..HEAD markdown > CHANGELOG.md",
     "postversion": "git push origin $(git rev-parse --abbrev-ref HEAD) && git push --tags"
   },
   "author": "KonstantinKai",
@@ -27,6 +28,7 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
+    "git-release-notes": "^1.0.0",
     "mocha": "^3.2.0"
   },
   "repository": {

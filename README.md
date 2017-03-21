@@ -17,7 +17,8 @@ const cssToStylus = require('css-to-stylus-converter');
  cssSyntax: boolean,
  separateRules: boolean,
  removeComments: boolean,
- colorVariables: boolean
+ colorVariables: boolean,
+ colorPrefix: string
  */
 
 const stylusResult = cssToStylus(cssContent, converterOptions);
