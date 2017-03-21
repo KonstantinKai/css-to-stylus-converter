@@ -1,4 +1,16 @@
 
+* __Build process improvements__
+
+    [KonstantinKai](mailto:kosyak46@gmail.com) - Tue, 21 Mar 2017 14:32:11 +0200
+    
+    
+
+* __1.0.8__
+
+    [KonstantinKai](mailto:kosyak46@gmail.com) - Tue, 21 Mar 2017 14:26:50 +0200
+    
+    
+
 * __Add Changelog &amp; fixed typo in readme__
 
     [KonstantinKai](mailto:kosyak46@gmail.com) - Tue, 21 Mar 2017 14:26:45 +0200
