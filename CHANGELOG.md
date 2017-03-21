@@ -1,4 +1,10 @@
 
+* __Add Changelog &amp; fixed typo in readme__
+
+    [KonstantinKai](mailto:kosyak46@gmail.com) - Tue, 21 Mar 2017 14:26:45 +0200
+    
+    
+
 * __1.0.7__
 
     [KonstantinKai](mailto:kosyak46@gmail.com) - Tue, 21 Mar 2017 12:55:40 +0200
