@@ -64,6 +64,24 @@ module.exports = (test) => {
 					colorVariables: true,
 					colorPrefix: '_c'
 				}
+			],
+			[
+				[
+					`.colors {`,
+					`	border-top: 1px solid #FFF;`,
+					`	color: #ffffff;`,
+					`}`
+				].join('\n'),
+				[
+					`$color-1 = #fff`,
+					``,
+					`.colors`,
+					`	border-top 1px solid $color-1`,
+					`	color $color-1`
+				].join('\n'),
+				{
+					colorVariables: true
+				}
 			]
 		]);
 	});
