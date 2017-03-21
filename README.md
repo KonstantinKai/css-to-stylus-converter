@@ -31,16 +31,16 @@ Usage: css-to-stylus [options] <file ...>
 
     -h, --help             output usage information
     -V, --version          output the version number
-    -u --unprefix          remove vendor prefixes
-    -i --indent [n]        set indentation (number|tab)
-    -c --css-syntax        keep css syntax
-    -l --keep-colons       keep colons
-    -s --separate-rules    add new line before next rule
-    -r --remove-comments   remove comments
-    -o --color-variables   create color variables at top of file
-    -p --color-variables-prefix  color variables prefix
-    -d --output-dir [dir]  output dir
-    -v --verbose           show information
+    -u, --unprefix          remove vendor prefixes
+    -i, --indent [n]        set indentation (number|tab)
+    -c, --css-syntax        keep css syntax
+    -l, --keep-colons       keep colons
+    -s, --separate-rules    add new line before next rule
+    -r, --remove-comments   remove comments
+    -o, --color-variables   create color variables at top of file
+    -p, --color-prefix  color variables prefix
+    -d, --output-dir [dir]  output dir
+    -v, --verbose           show information
 
   Examples:
 

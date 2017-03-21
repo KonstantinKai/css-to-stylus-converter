@@ -62,7 +62,7 @@ module.exports = (test) => {
 				].join('\n'),
 				{
 					colorVariables: true,
-					colorVariablesPrefix: '_c'
+					colorPrefix: '_c'
 				}
 			]
 		]);

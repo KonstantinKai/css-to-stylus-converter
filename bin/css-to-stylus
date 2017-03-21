@@ -50,18 +50,18 @@ program
 	.action(function () {
 		inputFiles = Array.prototype.slice.call(arguments, 0, -1);
 	})
-	.option('-u --unprefix', 'remove vendor prefixes')
-	.option('-i --indent [n]', 'set indentation (number|tab)', val => {
+	.option('-u, --unprefix', 'remove vendor prefixes')
+	.option('-i, --indent [n]', 'set indentation (number|tab)', val => {
 		return val === 'tab' && val || parseInt(val);
 	})
-	.option('-c --css-syntax', 'keep css syntax')
-	.option('-l --keep-colons', 'keep colons')
-	.option('-s --separate-rules', 'add new line before next rule')
-	.option('-r --remove-comments', 'remove comments')
-	.option('-o --color-variables', 'create color variables at top of file')
-	.option('-p --color-variables-prefix [prefix]', 'color variables prefix')
-	.option('-d --output-dir [dir]', 'output dir')
-	.option('-v --verbose', 'show information')
+	.option('-c, --css-syntax', 'keep css syntax')
+	.option('-l, --keep-colons', 'keep colons')
+	.option('-s, --separate-rules', 'add new line before next rule')
+	.option('-r, --remove-comments', 'remove comments')
+	.option('-o, --color-variables', 'create color variables at top of file')
+	.option('-p, --color-prefix [prefix]', 'color variables prefix')
+	.option('-d, --output-dir [dir]', 'output dir')
+	.option('-v, --verbose', 'show information')
 	.on('--help', () => {
 		console.log([
 			'  Examples:',
@@ -87,7 +87,7 @@ const convertOptions = {
 	separateRules: program.separateRules,
 	removeComments: program.removeComments,
 	colorVariables: program.colorVariables,
-	colorVariablesPrefix: program.colorVariablesPrefix
+	colorPrefix: program.colorPrefix
 };
 
 const outputDir = resolveToAbsolute(program.outputDir, process.cwd());
