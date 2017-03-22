@@ -1,4 +1,16 @@
 
+* __Fix vetrical indentation with separateRules option, remove prop filter with not compatible values__
+
+    [KonstantinKai](mailto:kosyak46@gmail.com) - Wed, 22 Mar 2017 19:04:24 +0200
+    
+    
+
+* __1.0.9__
+
+    [KonstantinKai](mailto:kosyak46@gmail.com) - Tue, 21 Mar 2017 14:32:18 +0200
+    
+    
+
 * __Build process improvements__
 
     [KonstantinKai](mailto:kosyak46@gmail.com) - Tue, 21 Mar 2017 14:32:11 +0200
