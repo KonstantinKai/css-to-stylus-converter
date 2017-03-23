@@ -1,4 +1,16 @@
 
+* __Add filter property for color processing, verbose option output relative paths to cwd__
+
+    [KonstantinKai](mailto:kosyak46@gmail.com) - Thu, 23 Mar 2017 10:20:14 +0200
+    
+    
+
+* __1.1.0__
+
+    [KonstantinKai](mailto:kosyak46@gmail.com) - Wed, 22 Mar 2017 19:05:17 +0200
+    
+    
+
 * __Fix vetrical indentation with separateRules option, remove prop filter with not compatible values__
 
     [KonstantinKai](mailto:kosyak46@gmail.com) - Wed, 22 Mar 2017 19:04:24 +0200
