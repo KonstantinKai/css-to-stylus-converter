@@ -15,7 +15,9 @@ function resolveToAbsolute (src = '', cwd) {
 	return !path.isAbsolute(src) && path.resolve(cwd, src) || src;
 }
 
-function writeFile (fileName, dirName, content) {
+function writeFile (fileName, dirName, content, fromFile) {
+	fromFile = fromFile ? `${path.relative(process.cwd(), fromFile)} ` : '';
+
 	if (!fileName) {
 		fileName = `${_.uniqueId(_.now() + '_')}.styl`;
 	} else {
@@ -27,7 +29,7 @@ function writeFile (fileName, dirName, content) {
 	}
 
 	if (program.verbose) {
-		console.log(`-> ${path.join(dirName, fileName)}`);
+		console.log(`  ${fromFile}-> ${path.relative(process.cwd(), path.join(dirName, fileName))}`);
 	}
 
 	fs.writeFile(path.join(dirName, fileName), content);
@@ -101,7 +103,7 @@ if (inputFiles.length) {
 		let stylusContent = convert(fs.readFileSync(fullPath).toString(), convertOptions);
 
 		if (outputDir) {
-			writeFile(baseName, outputDir, stylusContent);
+			writeFile(baseName, outputDir, stylusContent, fullPath);
 		}
 	});
 } else {
