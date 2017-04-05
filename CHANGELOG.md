@@ -1,4 +1,16 @@
 
+* __add a few props for ColorRaiser, now, if css is not valid, script throw exception__
+
+    [KonstantinKai](mailto:kosyak46@gmail.com) - Wed, 5 Apr 2017 10:18:23 +0300
+    
+    
+
+* __1.1.1__
+
+    [KonstantinKai](mailto:kosyak46@gmail.com) - Thu, 23 Mar 2017 10:20:24 +0200
+    
+    
+
 * __Add filter property for color processing, verbose option output relative paths to cwd__
 
     [KonstantinKai](mailto:kosyak46@gmail.com) - Thu, 23 Mar 2017 10:20:14 +0200
