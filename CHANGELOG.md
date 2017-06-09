@@ -1,4 +1,16 @@
 
+* __Fix issue#1 with DeprecationWarning__
+
+    [KonstantinKai](mailto:kosyak46@gmail.com) - Fri, 9 Jun 2017 14:43:14 +0300
+    
+    
+
+* __1.1.2__
+
+    [KonstantinKai](mailto:kosyak46@gmail.com) - Wed, 5 Apr 2017 10:18:45 +0300
+    
+    
+
 * __add a few props for ColorRaiser, now, if css is not valid, script throw exception__
 
     [KonstantinKai](mailto:kosyak46@gmail.com) - Wed, 5 Apr 2017 10:18:23 +0300
