@@ -32,7 +32,7 @@ function writeFile (fileName, dirName, content, fromFile) {
 		console.log(`  ${fromFile}-> ${path.relative(process.cwd(), path.join(dirName, fileName))}`);
 	}
 
-	fs.writeFile(path.join(dirName, fileName), content);
+	return fs.writeFileSync(path.join(dirName, fileName), content);
 }
 
 function dirExist (dir) {
