@@ -1,4 +1,16 @@
 
+* __added 4 node version support__
+
+    [KonstantinKai](mailto:kosyak46@gmail.com) - Mon, 12 Jun 2017 14:10:57 +0300
+    
+    
+
+* __1.1.3__
+
+    [KonstantinKai](mailto:kosyak46@gmail.com) - Fri, 9 Jun 2017 14:44:43 +0300
+    
+    
+
 * __Fix issue#1 with DeprecationWarning__
 
     [KonstantinKai](mailto:kosyak46@gmail.com) - Fri, 9 Jun 2017 14:43:14 +0300
