@@ -1,9 +1,11 @@
 #!/usr/bin/env node
 
+'use strict'
+
 const fs = require('fs');
 const path = require('path');
 const program = require('commander');
-const package = require('../package');
+const pkg = require('../package');
 const convert = require('../');
 const mkdirp = require('mkdirp');
 const _ = require('lodash');
@@ -47,7 +49,7 @@ function dirExist (dir) {
 }
 
 program
-	.version(package.version)
+	.version(pkg.version)
 	.usage('[options] <file ...>')
 	.action(function () {
 		inputFiles = Array.prototype.slice.call(arguments, 0, -1);
