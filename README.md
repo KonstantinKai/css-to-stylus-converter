@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/KonstantinKai/css-to-stylus-converter.svg?branch=master)](https://travis-ci.org/KonstantinKai/css-to-stylus-converter)
+
 # Css to Stylus converter
 
 ### Install:
