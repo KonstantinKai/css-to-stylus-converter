@@ -177,6 +177,23 @@ module.exports = (test) => {
 					`						&:first-child`,
 					`							padding 20px`
 				].join('\n')
+			],
+			[
+				[
+					`.animated.flipOutX,`,
+					`.animated.flipOutY,`,
+					`.animated.bounceIn,`,
+					`.animated.bounceOut {`,
+					`	animation-duration: .75s;`,
+					`}`
+				].join('\n'),
+				[
+					`.animated.flipOutX`,
+					`.animated.flipOutY`,
+					`.animated.bounceIn`,
+					`.animated.bounceOut`,
+					`	animation-duration .75s`
+				].join('\n')
 			]
 		]);
 	});
