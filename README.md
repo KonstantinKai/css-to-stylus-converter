@@ -1,6 +1,10 @@
 [![Build Status](https://travis-ci.org/KonstantinKai/css-to-stylus-converter.svg?branch=master)](https://travis-ci.org/KonstantinKai/css-to-stylus-converter)
 
+![Css To Stylus](https://konstantinkai.gallerycdn.vsassets.io/extensions/konstantinkai/vscode-css-to-stylus/0.0.1/1497339827241/Microsoft.VisualStudio.Services.Icons.Default)
+
 # Css to Stylus converter
+
+[=> Try VSCODE extension here <=](https://marketplace.visualstudio.com/items?itemName=konstantinkai.vscode-css-to-stylus)
 
 ### Install:
 
