@@ -1,4 +1,28 @@
 
+* __Added info about VSCODE extension in README__
+
+    [KonstantinKai](mailto:kosyak46@gmail.com) - Tue, 13 Jun 2017 11:14:46 +0300
+    
+    
+
+* __added .npmignore__
+
+    [KonstantinKai](mailto:kosyak46@gmail.com) - Mon, 12 Jun 2017 14:17:23 +0300
+    
+    
+
+* __Added travis build status image__
+
+    [KonstantinKai](mailto:kosyak46@gmail.com) - Mon, 12 Jun 2017 14:15:26 +0300
+    
+    
+
+* __1.1.4__
+
+    [KonstantinKai](mailto:kosyak46@gmail.com) - Mon, 12 Jun 2017 14:11:07 +0300
+    
+    
+
 * __added 4 node version support__
 
     [KonstantinKai](mailto:kosyak46@gmail.com) - Mon, 12 Jun 2017 14:10:57 +0300
