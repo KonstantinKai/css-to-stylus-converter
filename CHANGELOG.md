@@ -1,4 +1,16 @@
 
+* __Fix bug with multiple nested rules__
+
+    [KonstantinKai](mailto:kosyak46@gmail.com) - Tue, 13 Jun 2017 20:39:23 +0300
+    
+    
+
+* __1.1.5__
+
+    [KonstantinKai](mailto:kosyak46@gmail.com) - Tue, 13 Jun 2017 11:14:50 +0300
+    
+    
+
 * __Added info about VSCODE extension in README__
 
     [KonstantinKai](mailto:kosyak46@gmail.com) - Tue, 13 Jun 2017 11:14:46 +0300
