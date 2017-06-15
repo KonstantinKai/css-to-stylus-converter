@@ -1,4 +1,6 @@
 [![Build Status](https://travis-ci.org/KonstantinKai/css-to-stylus-converter.svg?branch=master)](https://travis-ci.org/KonstantinKai/css-to-stylus-converter)
+[![npm version](https://badge.fury.io/js/css-to-stylus-converter.svg)](https://badge.fury.io/js/css-to-stylus-converter)
+[![Dependency Status](https://www.versioneye.com/user/projects/594233096725bd00626ef96f/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/594233096725bd00626ef96f)
 
 ![Css To Stylus](https://konstantinkai.gallerycdn.vsassets.io/extensions/konstantinkai/vscode-css-to-stylus/0.0.1/1497339827241/Microsoft.VisualStudio.Services.Icons.Default)
 
