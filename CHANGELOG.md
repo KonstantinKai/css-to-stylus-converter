@@ -1,4 +1,22 @@
 
+* __make getCssAst as static, added its to export__
+
+    [KonstantinKai](mailto:kosyak46@gmail.com) - Tue, 27 Jun 2017 11:18:29 +0300
+    
+    
+
+* __Update info in README &amp; small improvements__
+
+    [KonstantinKai](mailto:kosyak46@gmail.com) - Thu, 15 Jun 2017 10:25:37 +0300
+    
+    
+
+* __1.1.6__
+
+    [KonstantinKai](mailto:kosyak46@gmail.com) - Tue, 13 Jun 2017 20:39:41 +0300
+    
+    
+
 * __Fix bug with multiple nested rules__
 
     [KonstantinKai](mailto:kosyak46@gmail.com) - Tue, 13 Jun 2017 20:39:23 +0300
