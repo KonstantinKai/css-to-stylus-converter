@@ -1,4 +1,22 @@
 
+* __remove node v4 support from package.json__
+
+    [KonstantinKai](mailto:kosyak46@gmail.com) - Wed, 10 Jan 2018 19:14:03 +0200
+    
+    
+
+* __remove node v4 support__
+
+    [KonstantinKai](mailto:kosyak46@gmail.com) - Wed, 10 Jan 2018 19:08:16 +0200
+    
+    
+
+* __1.1.8__
+
+    [KonstantinKai](mailto:kosyak46@gmail.com) - Wed, 10 Jan 2018 19:03:50 +0200
+    
+    
+
 * __fix issue#2, bug with single declaration started with dash__
 
     [KonstantinKai](mailto:kosyak46@gmail.com) - Wed, 10 Jan 2018 19:01:36 +0200
