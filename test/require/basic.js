@@ -75,6 +75,27 @@ module.exports = (test) => {
 					`				&.active`,
 					`					background-color #4c5ac2`
 				].join('\n')
+			],
+			[
+				[
+					`input[type=checkbox]{-webkit-appearance:checkbox;}`
+				].join('\n'),
+				[
+					`input[type=checkbox]`,
+					`	-webkit-appearance checkbox`
+				].join('\n')
+			],
+			[
+				[
+					`input[type=checkbox]{-webkit-appearance:checkbox;appearance:checkbox;}`
+				].join('\n'),
+				[
+					`input[type=checkbox]`,
+					`	appearance checkbox`
+				].join('\n'),
+				{
+					unprefix: true
+				}
 			]
 		])
 	});
