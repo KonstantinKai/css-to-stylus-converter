@@ -1,4 +1,16 @@
 
+* __fix issue#2, bug with single declaration started with dash__
+
+    [KonstantinKai](mailto:kosyak46@gmail.com) - Wed, 10 Jan 2018 19:01:36 +0200
+    
+    
+
+* __1.1.7__
+
+    [KonstantinKai](mailto:kosyak46@gmail.com) - Tue, 27 Jun 2017 11:18:38 +0300
+    
+    
+
 * __make getCssAst as static, added its to export__
 
     [KonstantinKai](mailto:kosyak46@gmail.com) - Tue, 27 Jun 2017 11:18:29 +0300
